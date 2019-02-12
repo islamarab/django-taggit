@@ -71,7 +71,7 @@ class TagBase(models.Model):
     def slugify(self, tag, i=None):
         slug = slugify(unidecode(tag))
         if i is not None:
-            slug += "_%d" % i
+            slug += "_%s" % i
         return slug
 
 
